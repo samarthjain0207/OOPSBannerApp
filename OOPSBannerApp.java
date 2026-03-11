@@ -1,4 +1,4 @@
-public class BannerApp {
+public class OOPSBannerApp {
     static class CharacterPatternMap {
 
         private char character;
