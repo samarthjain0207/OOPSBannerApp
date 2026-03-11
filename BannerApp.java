@@ -1,6 +1,4 @@
 public class BannerApp {
-
-    // Inner Static Class
     static class CharacterPatternMap {
 
         private char character;
@@ -19,8 +17,6 @@ public class BannerApp {
             return pattern;
         }
     }
-
-    // Method to get pattern of a character
     public static String[] getCharacterPattern(char ch, CharacterPatternMap[] patterns) {
 
         for (CharacterPatternMap p : patterns) {
@@ -33,8 +29,6 @@ public class BannerApp {
     }
 
     public static void main(String[] args) {
-
-        // Pattern for O
         String[] patternO = {
             "   ***   ",
             " **   ** ",
@@ -44,8 +38,6 @@ public class BannerApp {
             " **   ** ",
             "   ***   "
         };
-
-        // Pattern for P
         String[] patternP = {
             "******   ",
             "**    ** ",
@@ -55,8 +47,6 @@ public class BannerApp {
             "**       ",
             "**       "
         };
-
-        // Pattern for S
         String[] patternS = {
             "   ***** ",
             "  **     ",
@@ -66,8 +56,6 @@ public class BannerApp {
             " **   ** ",
             "  *****  "
         };
-
-        // Array of CharacterPatternMap objects
         CharacterPatternMap[] patterns = {
                 new CharacterPatternMap('O', patternO),
                 new CharacterPatternMap('P', patternP),
@@ -75,8 +63,6 @@ public class BannerApp {
         };
 
         String word = "OOPS";
-
-        // Print banner
         for (int i = 0; i < 7; i++) {
 
             StringBuilder line = new StringBuilder();
